@@ -1,6 +1,6 @@
 #!/bin/bash
 
-for i in `seq 1 4`;
+for i in `seq 1 5`;
     do
         # git checkout -b "automated-branch-$i"
         # echo "node () { " > Jenkinsfile
@@ -13,7 +13,7 @@ for i in `seq 1 4`;
         # echo "Sleep 30 seconds"
         # sleep 30
         git checkout master
-        git push --delete origin automated-branch-$i
-        git branch -d automated-branch-$i
+        git push --delete "origin automated-branch-$i"
+        git branch -D "automated-branch-$i"
 
     done 
