@@ -1,0 +1,349 @@
+##
+## This is the output of 
+## 
+## tail -f /var/log/jenkins/jenkins.log
+##
+## Starting immediately before I ran the 
+## create-pull-request.sh script.
+##
+
+---- About to create 10 of them ----
+
+
+
+Feb 08, 2019 11:12:09 PM org.jenkinsci.plugins.github.webhook.subscriber.DefaultPushGHEventSubscriber onEvent
+INFO: Received PushEvent for https://github.com/kshultzCB/creates-and-deletes from 192.30.253.29 ⇒ https://172.18.40.95/github-webhook/
+Feb 08, 2019 11:12:14 PM com.squareup.okhttp.internal.Platform$JdkWithJettyBootPlatform getSelectedProtocol
+INFO: ALPN callback dropped: SPDY and HTTP/2 are disabled. Is alpn-boot on the boot class path?
+Feb 08, 2019 11:12:28 PM org.jenkinsci.plugins.github.webhook.subscriber.DefaultPushGHEventSubscriber onEvent
+INFO: Received PushEvent for https://github.com/kshultzCB/creates-and-deletes from 192.30.252.35 ⇒ https://172.18.40.95/github-webhook/
+Feb 08, 2019 11:12:28 PM org.jenkinsci.plugins.github_branch_source.PullRequestGHEventSubscriber onEvent
+INFO: Received PULL_REQUEST for https://github.com/kshultzCB/creates-and-deletes from 192.30.252.44 ⇒ https://172.18.40.95/github-webhook/
+Feb 08, 2019 11:12:33 PM com.squareup.okhttp.internal.Platform$JdkWithJettyBootPlatform getSelectedProtocol
+INFO: ALPN callback dropped: SPDY and HTTP/2 are disabled. Is alpn-boot on the boot class path?
+Feb 08, 2019 11:12:34 PM hudson.model.listeners.RunListener report
+WARNING: RunListener failed
+com.google.common.cache.CacheLoader$InvalidCacheLoadException: CacheLoader returned null for key PR-6.
+	at com.google.common.cache.LocalCache$Segment.getAndRecordStats(LocalCache.java:2383)
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2351)
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2313)
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2228)
+	at com.google.common.cache.LocalCache.get(LocalCache.java:3965)
+	at com.google.common.cache.LocalCache$LocalManualCache.get(LocalCache.java:4764)
+	at hudson.plugins.jira.JiraSite.getIssue(JiraSite.java:787)
+	at hudson.plugins.jira.JiraJobAction.setAction(JiraJobAction.java:99)
+	at hudson.plugins.jira.JiraJobAction$RunListenerImpl.onStarted(JiraJobAction.java:130)
+	at hudson.plugins.jira.JiraJobAction$RunListenerImpl.onStarted(JiraJobAction.java:122)
+	at hudson.model.listeners.RunListener.fireStarted(RunListener.java:240)
+	at org.jenkinsci.plugins.workflow.job.WorkflowRun.run(WorkflowRun.java:285)
+	at hudson.model.ResourceController.execute(ResourceController.java:97)
+	at hudson.model.Executor.run(Executor.java:429)
+
+Feb 08, 2019 11:12:40 PM org.jenkinsci.plugins.workflow.job.WorkflowRun finish
+INFO: NGPIPELINE-190/PR-6 #1 completed: SUCCESS
+Feb 08, 2019 11:12:41 PM org.jenkinsci.plugins.github.webhook.subscriber.DefaultPushGHEventSubscriber onEvent
+INFO: Received PushEvent for https://github.com/kshultzCB/creates-and-deletes from 192.30.252.35 ⇒ https://172.18.40.95/github-webhook/
+Feb 08, 2019 11:12:42 PM org.jenkinsci.plugins.github_branch_source.PullRequestGHEventSubscriber onEvent
+INFO: Received PULL_REQUEST for https://github.com/kshultzCB/creates-and-deletes from 192.30.252.38 ⇒ https://172.18.40.95/github-webhook/
+Feb 08, 2019 11:12:47 PM hudson.model.listeners.RunListener report
+WARNING: RunListener failed
+com.google.common.cache.CacheLoader$InvalidCacheLoadException: CacheLoader returned null for key PR-7.
+	at com.google.common.cache.LocalCache$Segment.getAndRecordStats(LocalCache.java:2383)
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2351)
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2313)
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2228)
+	at com.google.common.cache.LocalCache.get(LocalCache.java:3965)
+	at com.google.common.cache.LocalCache$LocalManualCache.get(LocalCache.java:4764)
+	at hudson.plugins.jira.JiraSite.getIssue(JiraSite.java:787)
+	at hudson.plugins.jira.JiraJobAction.setAction(JiraJobAction.java:99)
+	at hudson.plugins.jira.JiraJobAction$RunListenerImpl.onStarted(JiraJobAction.java:130)
+	at hudson.plugins.jira.JiraJobAction$RunListenerImpl.onStarted(JiraJobAction.java:122)
+	at hudson.model.listeners.RunListener.fireStarted(RunListener.java:240)
+	at org.jenkinsci.plugins.workflow.job.WorkflowRun.run(WorkflowRun.java:285)
+	at hudson.model.ResourceController.execute(ResourceController.java:97)
+	at hudson.model.Executor.run(Executor.java:429)
+
+Feb 08, 2019 11:12:53 PM org.jenkinsci.plugins.workflow.job.WorkflowRun finish
+INFO: NGPIPELINE-190/PR-7 #1 completed: SUCCESS
+Feb 08, 2019 11:12:55 PM org.jenkinsci.plugins.github.webhook.subscriber.DefaultPushGHEventSubscriber onEvent
+INFO: Received PushEvent for https://github.com/kshultzCB/creates-and-deletes from 192.30.252.34 ⇒ https://172.18.40.95/github-webhook/
+Feb 08, 2019 11:12:55 PM org.jenkinsci.plugins.github_branch_source.PullRequestGHEventSubscriber onEvent
+INFO: Received PULL_REQUEST for https://github.com/kshultzCB/creates-and-deletes from 192.30.252.38 ⇒ https://172.18.40.95/github-webhook/
+Feb 08, 2019 11:13:01 PM hudson.model.listeners.RunListener report
+WARNING: RunListener failed
+com.google.common.cache.CacheLoader$InvalidCacheLoadException: CacheLoader returned null for key PR-8.
+	at com.google.common.cache.LocalCache$Segment.getAndRecordStats(LocalCache.java:2383)
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2351)
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2313)
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2228)
+	at com.google.common.cache.LocalCache.get(LocalCache.java:3965)
+	at com.google.common.cache.LocalCache$LocalManualCache.get(LocalCache.java:4764)
+	at hudson.plugins.jira.JiraSite.getIssue(JiraSite.java:787)
+	at hudson.plugins.jira.JiraJobAction.setAction(JiraJobAction.java:99)
+	at hudson.plugins.jira.JiraJobAction$RunListenerImpl.onStarted(JiraJobAction.java:130)
+	at hudson.plugins.jira.JiraJobAction$RunListenerImpl.onStarted(JiraJobAction.java:122)
+	at hudson.model.listeners.RunListener.fireStarted(RunListener.java:240)
+	at org.jenkinsci.plugins.workflow.job.WorkflowRun.run(WorkflowRun.java:285)
+	at hudson.model.ResourceController.execute(ResourceController.java:97)
+	at hudson.model.Executor.run(Executor.java:429)
+
+Feb 08, 2019 11:13:09 PM org.jenkinsci.plugins.github.webhook.subscriber.DefaultPushGHEventSubscriber onEvent
+INFO: Received PushEvent for https://github.com/kshultzCB/creates-and-deletes from 192.30.252.35 ⇒ https://172.18.40.95/github-webhook/
+Feb 08, 2019 11:13:09 PM org.jenkinsci.plugins.github_branch_source.PullRequestGHEventSubscriber onEvent
+INFO: Received PULL_REQUEST for https://github.com/kshultzCB/creates-and-deletes from 192.30.253.29 ⇒ https://172.18.40.95/github-webhook/
+Feb 08, 2019 11:13:12 PM org.jenkinsci.plugins.workflow.job.WorkflowRun finish
+INFO: NGPIPELINE-190/PR-8 #1 completed: SUCCESS
+Feb 08, 2019 11:13:14 PM hudson.model.listeners.RunListener report
+WARNING: RunListener failed
+com.google.common.cache.CacheLoader$InvalidCacheLoadException: CacheLoader returned null for key PR-9.
+	at com.google.common.cache.LocalCache$Segment.getAndRecordStats(LocalCache.java:2383)
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2351)
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2313)
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2228)
+	at com.google.common.cache.LocalCache.get(LocalCache.java:3965)
+	at com.google.common.cache.LocalCache$LocalManualCache.get(LocalCache.java:4764)
+	at hudson.plugins.jira.JiraSite.getIssue(JiraSite.java:787)
+	at hudson.plugins.jira.JiraJobAction.setAction(JiraJobAction.java:99)
+	at hudson.plugins.jira.JiraJobAction$RunListenerImpl.onStarted(JiraJobAction.java:130)
+	at hudson.plugins.jira.JiraJobAction$RunListenerImpl.onStarted(JiraJobAction.java:122)
+	at hudson.model.listeners.RunListener.fireStarted(RunListener.java:240)
+	at org.jenkinsci.plugins.workflow.job.WorkflowRun.run(WorkflowRun.java:285)
+	at hudson.model.ResourceController.execute(ResourceController.java:97)
+	at hudson.model.Executor.run(Executor.java:429)
+
+Feb 08, 2019 11:13:22 PM org.jenkinsci.plugins.workflow.job.WorkflowRun finish
+INFO: NGPIPELINE-190/PR-9 #1 completed: SUCCESS
+Feb 08, 2019 11:13:22 PM org.jenkinsci.plugins.github.webhook.subscriber.DefaultPushGHEventSubscriber onEvent
+INFO: Received PushEvent for https://github.com/kshultzCB/creates-and-deletes from 192.30.252.35 ⇒ https://172.18.40.95/github-webhook/
+Feb 08, 2019 11:13:23 PM org.jenkinsci.plugins.github_branch_source.PullRequestGHEventSubscriber onEvent
+INFO: Received PULL_REQUEST for https://github.com/kshultzCB/creates-and-deletes from 192.30.252.36 ⇒ https://172.18.40.95/github-webhook/
+Feb 08, 2019 11:13:28 PM hudson.model.listeners.RunListener report
+WARNING: RunListener failed
+com.google.common.cache.CacheLoader$InvalidCacheLoadException: CacheLoader returned null for key branch-5.
+	at com.google.common.cache.LocalCache$Segment.getAndRecordStats(LocalCache.java:2383)
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2351)
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2313)
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2228)
+	at com.google.common.cache.LocalCache.get(LocalCache.java:3965)
+	at com.google.common.cache.LocalCache$LocalManualCache.get(LocalCache.java:4764)
+	at hudson.plugins.jira.JiraSite.getIssue(JiraSite.java:787)
+	at hudson.plugins.jira.JiraJobAction.setAction(JiraJobAction.java:99)
+	at hudson.plugins.jira.JiraJobAction$RunListenerImpl.onStarted(JiraJobAction.java:130)
+	at hudson.plugins.jira.JiraJobAction$RunListenerImpl.onStarted(JiraJobAction.java:122)
+	at hudson.model.listeners.RunListener.fireStarted(RunListener.java:240)
+	at org.jenkinsci.plugins.workflow.job.WorkflowRun.run(WorkflowRun.java:285)
+	at hudson.model.ResourceController.execute(ResourceController.java:97)
+	at hudson.model.Executor.run(Executor.java:429)
+
+HTTP Headers:
+
+Server: GitHub.com,
+Date: Fri, 08 Feb 2019 23:13:28 GMT,
+Content-Type: application/json; charset=utf-8,
+Transfer-Encoding: chunked,
+Status: 404 Not Found,
+X-RateLimit-Limit: 5000,
+X-RateLimit-Remaining: 4998,
+X-RateLimit-Reset: 1549671208,
+X-OAuth-Scopes: repo,
+X-Accepted-OAuth-Scopes: repo,
+X-GitHub-Media-Type: github.v3; format=json,
+Access-Control-Expose-Headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type,
+Access-Control-Allow-Origin: *,
+Strict-Transport-Security: max-age=31536000; includeSubdomains; preload,
+X-Frame-Options: deny,
+X-Content-Type-Options: nosniff,
+X-XSS-Protection: 1; mode=block,
+Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin,
+Content-Security-Policy: default-src 'none',
+Content-Encoding: gzip,
+X-GitHub-Request-Id: E898:4177:15A16C5:2B3EC57:5C5E0D18,
+OkHttp-Sent-Millis: 1549667608356,
+OkHttp-Received-Millis: 1549667608397,
+Server returned http error code: 404 and error message: �1�0
+                                                               Ы ��f`��
+�WɉClwA�X�{S�j*���b��x�t�,�7tKV�?|��w��k�X�R���\6i�����R��
+                                                                #�-L�j���O�An
+Feb 08, 2019 11:13:28 PM com.squareup.okhttp.internal.Platform$JdkWithJettyBootPlatform getSelectedProtocol
+INFO: ALPN callback dropped: SPDY and HTTP/2 are disabled. Is alpn-boot on the boot class path?
+Feb 08, 2019 11:13:28 PM org.jenkinsci.plugins.workflow.job.WorkflowRun finish
+INFO: NGPIPELINE-190/automated-branch-5 #1 completed: SUCCESS
+Feb 08, 2019 11:13:36 PM org.jenkinsci.plugins.github.webhook.subscriber.DefaultPushGHEventSubscriber onEvent
+INFO: Received PushEvent for https://github.com/kshultzCB/creates-and-deletes from 192.30.252.38 ⇒ https://172.18.40.95/github-webhook/
+Feb 08, 2019 11:13:37 PM org.jenkinsci.plugins.github_branch_source.PullRequestGHEventSubscriber onEvent
+INFO: Received PULL_REQUEST for https://github.com/kshultzCB/creates-and-deletes from 192.30.252.37 ⇒ https://172.18.40.95/github-webhook/
+Feb 08, 2019 11:13:42 PM hudson.model.listeners.RunListener report
+WARNING: RunListener failed
+com.google.common.cache.CacheLoader$InvalidCacheLoadException: CacheLoader returned null for key branch-6.
+	at com.google.common.cache.LocalCache$Segment.getAndRecordStats(LocalCache.java:2383)
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2351)
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2313)
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2228)
+	at com.google.common.cache.LocalCache.get(LocalCache.java:3965)
+	at com.google.common.cache.LocalCache$LocalManualCache.get(LocalCache.java:4764)
+	at hudson.plugins.jira.JiraSite.getIssue(JiraSite.java:787)
+	at hudson.plugins.jira.JiraJobAction.setAction(JiraJobAction.java:99)
+	at hudson.plugins.jira.JiraJobAction$RunListenerImpl.onStarted(JiraJobAction.java:130)
+	at hudson.plugins.jira.JiraJobAction$RunListenerImpl.onStarted(JiraJobAction.java:122)
+	at hudson.model.listeners.RunListener.fireStarted(RunListener.java:240)
+	at org.jenkinsci.plugins.workflow.job.WorkflowRun.run(WorkflowRun.java:285)
+	at hudson.model.ResourceController.execute(ResourceController.java:97)
+	at hudson.model.Executor.run(Executor.java:429)
+
+HTTP Headers:
+
+Server: GitHub.com,
+Date: Fri, 08 Feb 2019 23:13:42 GMT,
+Content-Type: application/json; charset=utf-8,
+Transfer-Encoding: chunked,
+Status: 404 Not Found,
+X-RateLimit-Limit: 5000,
+X-RateLimit-Remaining: 4988,
+X-RateLimit-Reset: 1549671208,
+X-OAuth-Scopes: repo,
+X-Accepted-OAuth-Scopes: repo,
+X-GitHub-Media-Type: github.v3; format=json,
+Access-Control-Expose-Headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type,
+Access-Control-Allow-Origin: *,
+Strict-Transport-Security: max-age=31536000; includeSubdomains; preload,
+X-Frame-Options: deny,
+X-Content-Type-Options: nosniff,
+X-XSS-Protection: 1; mode=block,
+Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin,
+Content-Security-Policy: default-src 'none',
+Content-Encoding: gzip,
+X-GitHub-Request-Id: E058:08C3:15706B6:2AF07E0:5C5E0D26,
+OkHttp-Sent-Millis: 1549667622220,
+OkHttp-Received-Millis: 1549667622263,
+Server returned http error code: 404 and error message: �1�0
+                                                               Ы ��f`��
+�WɉClwA�X�{S�j*���b��x�t�,�7tKV�?|��w��k�X�R���\6i�����R��
+                                                                #�-L�j���O�An
+Feb 08, 2019 11:13:42 PM org.jenkinsci.plugins.workflow.job.WorkflowRun finish
+INFO: NGPIPELINE-190/automated-branch-6 #1 completed: SUCCESS
+Feb 08, 2019 11:13:50 PM org.jenkinsci.plugins.github.webhook.subscriber.DefaultPushGHEventSubscriber onEvent
+INFO: Received PushEvent for https://github.com/kshultzCB/creates-and-deletes from 192.30.252.38 ⇒ https://172.18.40.95/github-webhook/
+Feb 08, 2019 11:13:50 PM org.jenkinsci.plugins.github_branch_source.PullRequestGHEventSubscriber onEvent
+INFO: Received PULL_REQUEST for https://github.com/kshultzCB/creates-and-deletes from 192.30.252.39 ⇒ https://172.18.40.95/github-webhook/
+Feb 08, 2019 11:13:55 PM hudson.model.listeners.RunListener report
+WARNING: RunListener failed
+com.google.common.cache.CacheLoader$InvalidCacheLoadException: CacheLoader returned null for key branch-7.
+	at com.google.common.cache.LocalCache$Segment.getAndRecordStats(LocalCache.java:2383)
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2351)
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2313)
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2228)
+	at com.google.common.cache.LocalCache.get(LocalCache.java:3965)
+	at com.google.common.cache.LocalCache$LocalManualCache.get(LocalCache.java:4764)
+	at hudson.plugins.jira.JiraSite.getIssue(JiraSite.java:787)
+	at hudson.plugins.jira.JiraJobAction.setAction(JiraJobAction.java:99)
+	at hudson.plugins.jira.JiraJobAction$RunListenerImpl.onStarted(JiraJobAction.java:130)
+	at hudson.plugins.jira.JiraJobAction$RunListenerImpl.onStarted(JiraJobAction.java:122)
+	at hudson.model.listeners.RunListener.fireStarted(RunListener.java:240)
+	at org.jenkinsci.plugins.workflow.job.WorkflowRun.run(WorkflowRun.java:285)
+	at hudson.model.ResourceController.execute(ResourceController.java:97)
+	at hudson.model.Executor.run(Executor.java:429)
+
+HTTP Headers:
+
+Server: GitHub.com,
+Date: Fri, 08 Feb 2019 23:13:55 GMT,
+Content-Type: application/json; charset=utf-8,
+Transfer-Encoding: chunked,
+Status: 404 Not Found,
+X-RateLimit-Limit: 5000,
+X-RateLimit-Remaining: 4975,
+X-RateLimit-Reset: 1549671208,
+X-OAuth-Scopes: repo,
+X-Accepted-OAuth-Scopes: repo,
+X-GitHub-Media-Type: github.v3; format=json,
+Access-Control-Expose-Headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type,
+Access-Control-Allow-Origin: *,
+Strict-Transport-Security: max-age=31536000; includeSubdomains; preload,
+X-Frame-Options: deny,
+X-Content-Type-Options: nosniff,
+X-XSS-Protection: 1; mode=block,
+Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin,
+Content-Security-Policy: default-src 'none',
+Content-Encoding: gzip,
+X-GitHub-Request-Id: E898:4177:15A1E3D:2B3FCB8:5C5E0D33,
+OkHttp-Sent-Millis: 1549667635854,
+OkHttp-Received-Millis: 1549667635887,
+Server returned http error code: 404 and error message: �1�0
+                                                               Ы ��f`��
+�WɉClwA�X�{S�j*���b��x�t�,�7tKV�?|��w��k�X�R���\6i�����R��
+                                                                #�-L�j���O�An
+Feb 08, 2019 11:14:00 PM org.jenkinsci.plugins.workflow.job.WorkflowRun finish
+INFO: NGPIPELINE-190/automated-branch-7 #1 completed: SUCCESS
+Feb 08, 2019 11:14:05 PM org.jenkinsci.plugins.github.webhook.subscriber.DefaultPushGHEventSubscriber onEvent
+INFO: Received PushEvent for https://github.com/kshultzCB/creates-and-deletes from 192.30.252.35 ⇒ https://172.18.40.95/github-webhook/
+Feb 08, 2019 11:14:05 PM org.jenkinsci.plugins.github_branch_source.PullRequestGHEventSubscriber onEvent
+INFO: Received PULL_REQUEST for https://github.com/kshultzCB/creates-and-deletes from 192.30.253.29 ⇒ https://172.18.40.95/github-webhook/
+Feb 08, 2019 11:14:11 PM hudson.model.listeners.RunListener report
+WARNING: RunListener failed
+com.google.common.cache.CacheLoader$InvalidCacheLoadException: CacheLoader returned null for key PR-13.
+	at com.google.common.cache.LocalCache$Segment.getAndRecordStats(LocalCache.java:2383)
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2351)
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2313)
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2228)
+	at com.google.common.cache.LocalCache.get(LocalCache.java:3965)
+	at com.google.common.cache.LocalCache$LocalManualCache.get(LocalCache.java:4764)
+	at hudson.plugins.jira.JiraSite.getIssue(JiraSite.java:787)
+	at hudson.plugins.jira.JiraJobAction.setAction(JiraJobAction.java:99)
+	at hudson.plugins.jira.JiraJobAction$RunListenerImpl.onStarted(JiraJobAction.java:130)
+	at hudson.plugins.jira.JiraJobAction$RunListenerImpl.onStarted(JiraJobAction.java:122)
+	at hudson.model.listeners.RunListener.fireStarted(RunListener.java:240)
+	at org.jenkinsci.plugins.workflow.job.WorkflowRun.run(WorkflowRun.java:285)
+	at hudson.model.ResourceController.execute(ResourceController.java:97)
+	at hudson.model.Executor.run(Executor.java:429)
+
+Feb 08, 2019 11:14:12 PM org.jenkinsci.plugins.workflow.job.WorkflowRun finish
+INFO: NGPIPELINE-190/PR-13 #1 completed: SUCCESS
+Feb 08, 2019 11:14:19 PM org.jenkinsci.plugins.github.webhook.subscriber.DefaultPushGHEventSubscriber onEvent
+INFO: Received PushEvent for https://github.com/kshultzCB/creates-and-deletes from 192.30.252.35 ⇒ https://172.18.40.95/github-webhook/
+Feb 08, 2019 11:14:20 PM org.jenkinsci.plugins.github_branch_source.PullRequestGHEventSubscriber onEvent
+INFO: Received PULL_REQUEST for https://github.com/kshultzCB/creates-and-deletes from 192.30.252.39 ⇒ https://172.18.40.95/github-webhook/
+Feb 08, 2019 11:14:26 PM hudson.model.listeners.RunListener report
+WARNING: RunListener failed
+com.google.common.cache.CacheLoader$InvalidCacheLoadException: CacheLoader returned null for key PR-14.
+	at com.google.common.cache.LocalCache$Segment.getAndRecordStats(LocalCache.java:2383)
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2351)
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2313)
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2228)
+	at com.google.common.cache.LocalCache.get(LocalCache.java:3965)
+	at com.google.common.cache.LocalCache$LocalManualCache.get(LocalCache.java:4764)
+	at hudson.plugins.jira.JiraSite.getIssue(JiraSite.java:787)
+	at hudson.plugins.jira.JiraJobAction.setAction(JiraJobAction.java:99)
+	at hudson.plugins.jira.JiraJobAction$RunListenerImpl.onStarted(JiraJobAction.java:130)
+	at hudson.plugins.jira.JiraJobAction$RunListenerImpl.onStarted(JiraJobAction.java:122)
+	at hudson.model.listeners.RunListener.fireStarted(RunListener.java:240)
+	at org.jenkinsci.plugins.workflow.job.WorkflowRun.run(WorkflowRun.java:285)
+	at hudson.model.ResourceController.execute(ResourceController.java:97)
+	at hudson.model.Executor.run(Executor.java:429)
+
+Feb 08, 2019 11:14:26 PM org.jenkinsci.plugins.workflow.job.WorkflowRun finish
+INFO: NGPIPELINE-190/PR-14 #1 completed: SUCCESS
+Feb 08, 2019 11:14:33 PM org.jenkinsci.plugins.github.webhook.subscriber.DefaultPushGHEventSubscriber onEvent
+INFO: Received PushEvent for https://github.com/kshultzCB/creates-and-deletes from 192.30.252.38 ⇒ https://172.18.40.95/github-webhook/
+Feb 08, 2019 11:14:33 PM org.jenkinsci.plugins.github_branch_source.PullRequestGHEventSubscriber onEvent
+INFO: Received PULL_REQUEST for https://github.com/kshultzCB/creates-and-deletes from 192.30.252.44 ⇒ https://172.18.40.95/github-webhook/
+Feb 08, 2019 11:14:39 PM hudson.model.listeners.RunListener report
+WARNING: RunListener failed
+com.google.common.cache.CacheLoader$InvalidCacheLoadException: CacheLoader returned null for key PR-15.
+	at com.google.common.cache.LocalCache$Segment.getAndRecordStats(LocalCache.java:2383)
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2351)
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2313)
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2228)
+	at com.google.common.cache.LocalCache.get(LocalCache.java:3965)
+	at com.google.common.cache.LocalCache$LocalManualCache.get(LocalCache.java:4764)
+	at hudson.plugins.jira.JiraSite.getIssue(JiraSite.java:787)
+	at hudson.plugins.jira.JiraJobAction.setAction(JiraJobAction.java:99)
+	at hudson.plugins.jira.JiraJobAction$RunListenerImpl.onStarted(JiraJobAction.java:130)
+	at hudson.plugins.jira.JiraJobAction$RunListenerImpl.onStarted(JiraJobAction.java:122)
+	at hudson.model.listeners.RunListener.fireStarted(RunListener.java:240)
+	at org.jenkinsci.plugins.workflow.job.WorkflowRun.run(WorkflowRun.java:285)
+	at hudson.model.ResourceController.execute(ResourceController.java:97)
+	at hudson.model.Executor.run(Executor.java:429)
+
+Feb 08, 2019 11:14:45 PM org.jenkinsci.plugins.workflow.job.WorkflowRun finish
+INFO: NGPIPELINE-190/PR-15 #1 completed: SUCCESS
+
