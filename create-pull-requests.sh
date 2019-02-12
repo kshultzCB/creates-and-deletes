@@ -1,6 +1,6 @@
 #!/bin/bash
 git checkout master
-for i in `seq 1 10`;
+for i in `seq 1 20`;
     do
         git checkout -b "automated-branch-$i"
         echo "node () { " > Jenkinsfile
@@ -10,6 +10,6 @@ for i in `seq 1 10`;
         git add Jenkinsfile
         git commit -m "Creating commit for iteration $i"
         hub pull-request -p -m "command line pull request for iteration $i"
-        echo "Sleep 10 seconds"
-        sleep 10
+        echo "Sleep 5 seconds"
+        sleep 5
     done 
