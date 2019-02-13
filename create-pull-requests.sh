@@ -10,6 +10,6 @@ for i in `seq 1 20`;
         git add Jenkinsfile
         git commit -m "Creating commit for iteration $i"
         hub pull-request -p -m "command line pull request for iteration $i"
-        echo "Sleep 5 seconds"
-        sleep 5
+        echo "Sleep 2 seconds"
+        sleep 2
     done 
