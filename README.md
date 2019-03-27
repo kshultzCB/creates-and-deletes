@@ -29,8 +29,6 @@ make install prefix=/usr/local
 
 It'll probably bark at you for not having write access to `/usr/local` but somehow worked anyway.
 
-Now when you run `which go`, it'll be the right thing:
-
 ```
 kshultz@gigantic-laptop:~/GitHub$ hub version
 git version 2.19.1
