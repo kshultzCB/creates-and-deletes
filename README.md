@@ -36,3 +36,13 @@ kshultz@gigantic-laptop:~/GitHub$ hub version
 git version 2.19.1
 hub version 2.9.0-7-g2b67d8c3
 ```
+
+## Using Hub with Github Enterprise
+
+If you want to push this repo onto a GitHub Enterprise server of your own, you'll need to whitelist 
+that server so that hub will talk to it:
+
+```
+git config --add hub.host your.github-enterprise-server.org
+```
+
