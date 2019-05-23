@@ -1,6 +1,6 @@
 #!/bin/bash
 git checkout master
-for i in `seq 1 4`;
+for i in `seq 1 10`;
     do
         git checkout -b "automated-branch-$i"
         echo "node () { " > Jenkinsfile
