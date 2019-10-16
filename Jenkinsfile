@@ -3,7 +3,7 @@ node () {
         echo "Basic Jenkinsfile"
         sh "netstat -a" 
         sleep 10
-        error("This failed")
+        // error("This failed")
     }
 }
 
